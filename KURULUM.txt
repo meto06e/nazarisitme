@@ -1,0 +1,18 @@
+KURULUM:
+1) Bu 4 HTML dosyasını public_html içine at.
+2) Telefon alanlarında +90XXXXXXXXXX yazan yerleri gerçek telefonla değiştir.
+3) siteadresiniz.com alanını gerçek domainle değiştir.
+4) favicon.svg hazır. Bunu favicon.png ve favicon.ico olarak da export edip root dizine koy:
+   /public_html/favicon.png
+   /public_html/favicon.ico
+5) Görselleri şu klasöre koy:
+   /public_html/assets/img/
+6) sitemap.xml ve robots.txt dosyalarını public_html içine at.
+7) Search Console > sitemap.xml gönder.
+8) URL Denetimi > ana sayfa ve 4 sayfa için dizine eklenmesini iste.
+
+GOOGLE ADS LANDING:
+- genel reklam: /mersin-isitme-cihazi.html
+- şarjlı cihaz reklamı: /sarjli-isitme-cihazi-mersin.html
+- kulak arkası reklamı: /kulak-arkasi-isitme-cihazi-mersin.html
+- kanal içi reklamı: /kanal-ici-isitme-cihazi-mersin.html
