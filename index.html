@@ -43,6 +43,25 @@
         gtag('config', 'G-2JPQCH1B8C');
     </script>
     <!-- Google tag (gtag.js) -->
+     <!-- Event snippet for Tıkla ve ara conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18151184267/cIXbCM_dtascEIuvlM9D',
+      'value': 1.0,
+      'currency': 'TRY',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18151184267"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
