@@ -1,18 +1,61 @@
-KURULUM:
-1) Bu 4 HTML dosyasını public_html içine at.
-2) Telefon alanlarında +90XXXXXXXXXX yazan yerleri gerçek telefonla değiştir.
-3) siteadresiniz.com alanını gerçek domainle değiştir.
-4) favicon.svg hazır. Bunu favicon.png ve favicon.ico olarak da export edip root dizine koy:
-   /public_html/favicon.png
-   /public_html/favicon.ico
-5) Görselleri şu klasöre koy:
-   /public_html/assets/img/
-6) sitemap.xml ve robots.txt dosyalarını public_html içine at.
-7) Search Console > sitemap.xml gönder.
-8) URL Denetimi > ana sayfa ve 4 sayfa için dizine eklenmesini iste.
+NAZAR İŞİTME — GÜNCEL SİTE PAKETİ | 04.10.2026
 
-GOOGLE ADS LANDING:
-- genel reklam: /mersin-isitme-cihazi.html
-- şarjlı cihaz reklamı: /sarjli-isitme-cihazi-mersin.html
-- kulak arkası reklamı: /kulak-arkasi-isitme-cihazi-mersin.html
-- kanal içi reklamı: /kanal-ici-isitme-cihazi-mersin.html
+DOĞRULANAN İŞLETME BİLGİLERİ
+Telefon ve WhatsApp: 0506 328 49 56
+Adres: Yeni Mahallesi, 5313. Sokak No:11/B, 33050 Akdeniz/Mersin
+Alan adı: https://nazarisitmecihazlari.com/
+Bu bilgiler işletme sahibinin paylaştığı Google işletme ekranına göre güncellendi.
+
+YAYINLAMA
+1. Mevcut sitenizin dosyalarını yedekleyin.
+2. ZIP'i açın. İçindeki index.html, diğer HTML dosyaları, assets klasörü,
+   robots.txt, sitemap.xml, favicon.svg, CNAME ve .nojekyll dosyalarını
+   mevcut sitenizin yayınlandığı dizine yükleyin. Dosyaları bir üst klasöre
+   koymayın; index.html site kökünde bulunmalıdır.
+3. Mevcut GitHub Pages ve özel alan adı ayarlarınızı koruyun. Paket yeni
+   bir hosting veya DNS ayarı gerektirmez. GitHub Pages'te .htaccess gerekmez.
+4. Yayından sonra altı sayfayı, arama/WhatsApp düğmelerini ve görselleri
+   telefon ve bilgisayarda kontrol edin. Form bir WhatsApp mesaj taslağı
+   açar; kullanıcı mesajı gönderdiğinde talep işletmeye ulaşır.
+5. https://nazarisitmecihazlari.com/sitemap.xml adresini Search Console'a
+   gönderin. Ana sayfa ve iletisim.html için URL Denetleme ile dizine ekleme
+   isteği oluşturun; diğer sayfaların seçilen standart URL'sini kontrol edin.
+
+SAYFALAR
+- / : Mersin işitme cihazları ve merkez hizmetleri
+- /mersin-isitme-cihazi.html : cihaz seçimi, teklif ve randevu rehberi
+- /sarjli-isitme-cihazi-mersin.html : şarjlı cihaz rehberi
+- /kulak-arkasi-isitme-cihazi-mersin.html : kulak arkası cihaz rehberi
+- /kanal-ici-isitme-cihazi-mersin.html : kanal içi cihaz rehberi
+- /iletisim.html : doğrulanan adres, telefon, harita ve ulaşım
+
+UYGULANAN DÜZENLEMELER
+- Tüm sayfalardaki görünür adres ve telefon, tel/WhatsApp bağlantıları,
+  form hedefi, harita ve LocalBusiness verisi birlikte güncellendi.
+- Örnek telefonlar ve eski adres bilgileri temizlendi.
+- Başlık, açıklama, standart URL, sosyal paylaşım metinleri ve işletme
+  yapılandırılmış verileri sayfanın amacına göre düzenlendi.
+- Ana sayfada tek ana başlık kullanıldı; cihaz rehberleri ayrıştırıldı.
+- Eksik görsel yolları düzeltildi; resim boyutları, lazy loading,
+  async decoding ve ilk slayt görseli için ön yükleme eklendi.
+- robots.txt gerçek alan adına bağlandı; sitemap altı sayfayı kapsıyor.
+- Menü ve alt bilgilerden iletişim/ulaşım sayfasına bağlantı eklendi.
+- Formlar ve işletme fotoğraf geçişleri harici jQuery bağımlılığından çıkarıldı.
+- Mevcut GA4 G-2JPQCH1B8C etiketi altı sayfaya tamamlandı. phone_click,
+  whatsapp_click ve whatsapp_form_submit olaylarında formdaki ad, telefon
+  veya mesaj metni gönderilmez. Hesapta olayları kontrol ederek gerekirse
+  önemli etkinlik olarak seçebilirsiniz.
+- Mevcut Google Ads etiketi ve dönüşüm kimliği korundu. Reklam kampanyası,
+  bütçe veya yeni reklam ayarı yapılmadı.
+
+YAYINDAN SONRA SEO TAKİBİ
+Google işletme profilindeki adres ve telefon sitedekiyle aynı olmalı.
+Profilin web sitesi alanında ana alan adını kullanın. Gerçek işletme
+fotoğraflarını ve çalışma saatlerini güncel tutun; gerçek müşterilerden
+yorum isteyin. Yeni şube, unvan, bayilik veya fiyat bilgileri yalnızca
+doğrulandıktan sonra eklenmeli. Search Console'da Mersin ve Akdeniz ile
+ilgili sorguların gösterim, tıklama ve konum değişimini izleyin.
+Sıralama yükselişi Google'ın taraması, yerel profil ve diğer rekabet
+sinyalleriyle birlikte oluşur; paket tek başına ilk sıra garantisi vermez.
+
+Bu ZIP hazırlanmıştır; canlı siteye otomatik yüklenmemiştir.

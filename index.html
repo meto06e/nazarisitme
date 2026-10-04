@@ -2,29 +2,21 @@
 <html lang="tr">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mersin İşitme Cihazları | Nazar İşitme Merkezi Akdeniz</title>
-    <meta name="description"
-        content="Nazar İşitme Merkezi, Mersin Akdeniz İhsaniye’de işitme cihazı satışı, ücretsiz işitme testi, cihaz ayarı, kulak kalıbı ve işitme cihazı bakımı hizmeti sunar. Şarjlı, kulak arkası ve kanal içi işitme cihazları için hemen arayın." />
-    <meta name="keywords"
-        content="mersin işitme merkezi, mersin işitme cihazı, akdeniz işitme merkezi, akdeniz işitme cihazı, işitme testi mersin, ücretsiz işitme testi mersin, işitme cihazı bakımı mersin, kulak kalıbı mersin, işitme cihazı fiyatları mersin" />
-    <meta name="robots" content="index, follow" />
-    <meta name="author" content="Nazar İşitme Merkezi" />
-    <link rel="canonical" href="https://nazarisitmecihazlari.com/" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.svg">
-    <link rel="icon" type="image/png" sizes="512x512" href="/favicon.svg">
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" href="/favicon.svg">
-    <meta property="og:title" content="Nazar İşitme Merkezi | Mersin İşitme Cihazı" />
-    <meta property="og:description"
-        content="Mersin Akdeniz'de ücretsiz işitme testi, işitme cihazı satışı, bakım, ayar ve satış sonrası destek." />
-    <meta property="og:image" content="assets/img/dukkan-dis.jpg" />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="tr_TR" />
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mersin İşitme Cihazları ve İşitme Merkezi | Nazar</title>
+    <meta name="description" content="Mersin Akdeniz’de Nazar İşitme Merkezi: işitme cihazı seçenekleri, cihaz ayarı, bakım ve kulak kalıbı desteği. Bilgi ve randevu için bize ulaşın.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Nazar İşitme Merkezi">
+    <link rel="canonical" href="https://nazarisitmecihazlari.com/">
+    <meta property="og:title" content="Mersin İşitme Cihazları ve İşitme Merkezi | Nazar">
+    <meta property="og:description" content="Mersin Akdeniz’de Nazar İşitme Merkezi: işitme cihazı seçenekleri, cihaz ayarı, bakım ve kulak kalıbı desteği. Bilgi ve randevu için bize ulaşın.">
+    <meta property="og:image" content="https://nazarisitmecihazlari.com/assets/img/tabela.jpeg">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="tr_TR">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2JPQCH1B8C">
     </script>
@@ -38,22 +30,29 @@
     <!-- Google tag (gtag.js) -->
     <!-- Event snippet for Tıkla ve ara conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-    <script>
-        function gtag_report_conversion(url) {
-            var callback = function () {
-                if (typeof (url) != 'undefined') {
-                    window.location = url;
-                }
-            };
-            gtag('event', 'conversion', {
-                'send_to': 'AW-18151184267/cIXbCM_dtascEIuvlM9D',
-                'value': 1.0,
-                'currency': 'TRY',
-                'event_callback': callback
-            });
-            return false;
-        }
-    </script>
+    <script>function gtag_report_conversion(url) {
+    var navigated = false;
+    var timer;
+    function navigate() {
+        if (navigated || !url) return;
+        navigated = true;
+        window.clearTimeout(timer);
+        window.location.href = url;
+    }
+    timer = window.setTimeout(navigate, 800);
+    if (typeof window.gtag === 'function') {
+        window.gtag('event', 'conversion', {
+            'send_to': 'AW-18151184267/cIXbCM_dtascEIuvlM9D',
+            'value': 1.0,
+            'currency': 'TRY',
+            'event_callback': navigate,
+            'event_timeout': 800
+        });
+    } else {
+        navigate();
+    }
+    return false;
+}</script>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18151184267"></script>
     <script>
@@ -232,7 +231,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             margin-bottom: 18px
         }
 
-        .hero h1 {
+        .hero h1, .hero .hero-heading {
             font-size: clamp(38px, 5vw, 70px);
             font-weight: 950;
             letter-spacing: -2px;
@@ -840,7 +839,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 display: none
             }
 
-            .hero h1 {
+            .hero h1, .hero .hero-heading {
                 font-size: 38px
             }
 
@@ -901,262 +900,117 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         }
     </style>
 
-    <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"LocalBusiness",
-    "name":"Nazar İşitme Merkezi",
-    "image":"https://nazarisitmecihazlari.com/assets/img/dukkan-dis.jpg",
-    "url":"https://nazarisitmecihazlari.com/",
-    "telephone":"+905326266756",
-    "priceRange":"₺₺",
-    "address":{"@type":"PostalAddress","streetAddress":"İhsaniye, Sait Çiftçi Cd. No:3","addressLocality":"Akdeniz","addressRegion":"Mersin","postalCode":"33060","addressCountry":"TR"},
-    "areaServed":["Mersin","Akdeniz","Yenişehir","Toroslar","Mezitli","İhsaniye"],
-    "description":"Nazar İşitme Merkezi, Mersin Akdeniz İhsaniye’de işitme cihazı satışı, ücretsiz işitme testi, cihaz ayarı, kulak kalıbı ve işitme cihazı bakımı hizmeti sunar.",
-    "sameAs":["https://www.google.com/maps"]
-  }
-  </script>
-    <script type="application/ld+json">
-{
+    <meta property="og:url" content="https://nazarisitmecihazlari.com/"><meta name="twitter:card" content="summary_large_image"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Nazar İşitme Merkezi",
-  "url": "https://nazarisitmecihazlari.com/",
-  "logo": "https://nazarisitmecihazlari.com/favicon.svg"
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Nazar İşitme Merkezi",
-  "url": "https://nazarisitmecihazlari.com/",
-  "inLanguage": "tr-TR"
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {"@type":"ListItem","position":1,"name":"Ana Sayfa","item":"https://nazarisitmecihazlari.com/"},
-    {"@type":"ListItem","position":2,"name":"Mersin İşitme Cihazları","item":"https://nazarisitmecihazlari.com/mersin-isitme-cihazi.html"}
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "İşitme cihazı seçerken nelere dikkat edilmeli?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "İşitme seviyesi, cihaz tipi, şarj/pil tercihi, görünürlük, telefon bağlantısı, konuşma netliği ve satış sonrası destek birlikte değerlendirilmelidir."
+      "@type": "LocalBusiness",
+      "@id": "https://nazarisitmecihazlari.com/#merkez",
+      "name": "Nazar İşitme",
+      "url": "https://nazarisitmecihazlari.com/",
+      "image": "https://nazarisitmecihazlari.com/assets/img/tabela.jpeg",
+      "telephone": "+905063284956",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Yeni Mahallesi, 5313. Sokak No:11/B",
+        "addressLocality": "Akdeniz",
+        "addressRegion": "Mersin",
+        "postalCode": "33050",
+        "addressCountry": "TR"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Mersin"
+      },
+      "alternateName": "Nazar İşitme Merkezi",
+      "hasMap": "https://www.google.com/maps/search/?api=1&query=Nazar%20%C4%B0%C5%9Fitme%2C%20Yeni%20Mahallesi%2C%205313.%20Sokak%20No%3A11%2FB%2C%2033050%20Akdeniz%2FMersin"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://nazarisitmecihazlari.com/#website",
+      "url": "https://nazarisitmecihazlari.com/",
+      "name": "Nazar İşitme Merkezi",
+      "inLanguage": "tr-TR",
+      "publisher": {
+        "@id": "https://nazarisitmecihazlari.com/#merkez"
       }
     },
     {
-      "@type": "Question",
-      "name": "Mersin’de ücretsiz işitme testi yapılıyor mu?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Nazar İşitme Merkezi’nde işitme cihazı ihtiyacı olan kullanıcılar için ön görüşme ve işitme değerlendirme süreci hakkında bilgi verilir. Randevu için telefon veya WhatsApp üzerinden ulaşabilirsiniz."
+      "@type": "WebPage",
+      "@id": "https://nazarisitmecihazlari.com/#webpage",
+      "url": "https://nazarisitmecihazlari.com/",
+      "name": "Mersin İşitme Cihazları ve İşitme Merkezi",
+      "description": "Mersin Akdeniz’de Nazar İşitme Merkezi: işitme cihazı seçenekleri, cihaz ayarı, bakım ve kulak kalıbı desteği. Bilgi ve randevu için bize ulaşın.",
+      "inLanguage": "tr-TR",
+      "isPartOf": {
+        "@id": "https://nazarisitmecihazlari.com/#website"
+      },
+      "about": {
+        "@id": "https://nazarisitmecihazlari.com/#merkez"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://nazarisitmecihazlari.com/assets/img/tabela.jpeg"
+      },
+      "breadcrumb": {
+        "@id": "https://nazarisitmecihazlari.com/#breadcrumb"
       }
     },
     {
-      "@type": "Question",
-      "name": "Nazar İşitme Merkezi nerede?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Merkezimiz İhsaniye, Sait Çiftçi Cd. No:3, 33070 Akdeniz/Mersin adresindedir."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Şarjlı işitme cihazı mı pilli işitme cihazı mı daha kullanışlı?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Şarjlı modeller pil değiştirmek istemeyen kullanıcılar için pratiktir. Pilli modeller ise bazı kullanıcılar için daha ekonomik ve alışılmış bir kullanım sunabilir."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Kulak arkası işitme cihazı kimler için uygundur?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Kulak arkası işitme cihazları geniş kullanım alanı, güçlü ses desteği ve kolay bakım avantajı nedeniyle birçok işitme kaybı seviyesinde tercih edilebilir."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Kanal içi işitme cihazı görünür mü?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Kanal içi işitme cihazları daha küçük ve estetik tasarıma sahiptir. Uygunluk, kulak yapısı ve işitme seviyesine göre değerlendirilmelidir."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "İşitme cihazı bakımı yapılır mı?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Evet. Filtre, kulak kalıbı, pil yuvası, mikrofon ve genel temizlik kontrolleriyle cihazın daha verimli çalışması desteklenir."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "İşitme cihazı ayarı neden önemlidir?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Cihaz ayarı konuşma netliği, ortam sesi dengesi ve kullanım konforu açısından önemlidir. Doğru ayar, cihazdan alınan verimi artırır."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "İşitme cihazı fiyatları neye göre değişir?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Fiyatlar cihazın markasına, teknoloji seviyesine, şarjlı veya pilli olmasına, kanal içi ya da kulak arkası model olmasına göre değişebilir."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "WhatsApp üzerinden fiyat ve randevu alınır mı?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Evet. Sayfadaki WhatsApp butonlarından cihaz bilgisi, fiyat aralığı, bakım ve randevu için hızlıca ulaşabilirsiniz."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Akdeniz işitme cihazı hizmeti veriyor musunuz?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Evet. Mersin Akdeniz İhsaniye’deki merkezimizde işitme cihazı satışı, bakım, ayar, kulak kalıbı ve danışmanlık hizmetleri sunuyoruz."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Yenişehir’den gelen müşterilere hizmet veriyor musunuz?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Evet. Yenişehir, Mezitli, Toroslar ve Mersin merkezden gelen kullanıcılarımıza işitme cihazı ve işitme testi konusunda destek sağlıyoruz."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Mezitli işitme cihazı kullanıcıları merkeze gelebilir mi?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Evet. Mezitli bölgesinden gelen kullanıcılar şarjlı, kulak arkası ve kanal içi işitme cihazı seçenekleri hakkında bilgi alabilir."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Toroslar işitme cihazı hizmeti var mı?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Evet. Toroslar bölgesinden gelen kullanıcılar için cihaz seçimi, ayar, bakım ve satış sonrası destek hizmetleri sunulmaktadır."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "İşitme cihazı pili ve filtresi bulunur mu?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "İşitme cihazı pili, filtre, temizlik ekipmanı ve aksesuar ihtiyaçları için merkezimizden bilgi alabilirsiniz."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Kulak kalıbı hizmeti veriliyor mu?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Evet. Kişiye özel kulak kalıbı ölçüsü ve cihaz uyumu konusunda destek veriyoruz."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "İşitme cihazı denemesi yapılır mı?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Cihaz seçimi öncesinde kullanım ihtiyacınız ve işitme seviyeniz değerlendirilerek uygun modeller hakkında bilgi verilir."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Bluetooth işitme cihazı var mı?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Telefon bağlantısı destekleyen akıllı işitme cihazı modelleri hakkında merkezimizden bilgi alabilirsiniz."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Yaşlılar için hangi işitme cihazı daha uygundur?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yaşlı kullanıcılar için kolay takılıp çıkarılabilen, ayarı sade, bakımı pratik ve konuşma netliğini destekleyen modeller tercih edilebilir."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "İşitme kaybı belirtileri nelerdir?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Televizyon sesini yükseltme, konuşmaları sık tekrar ettirme, kalabalık ortamda zorlanma ve telefon görüşmelerinde kelimeleri kaçırma yaygın belirtiler arasındadır."
-      }
+      "@type": "BreadcrumbList",
+      "@id": "https://nazarisitmecihazlari.com/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Ana Sayfa",
+          "item": "https://nazarisitmecihazlari.com/"
+        }
+      ]
     }
   ]
-}
-</script>
-
-</head>
+}</script><link rel="preload" as="image" href="/assets/img/1%20%2818%29.jpeg"><link rel="stylesheet" href="/assets/css/site.css"></head>
 
 <body>
 
-    <div class="topbar">
+    <a class="skip-link" href="#ana-icerik">İçeriğe geç</a><div class="topbar">
         <div class="container d-flex justify-content-between align-items-center">
             <div>
-                <a href="tel:+905326266756"><i class="fa-solid fa-phone me-1"></i> +905326266756</a>
-                <a href="https://wa.me/+905326266756"><i class="fa-brands fa-whatsapp me-1"></i> WhatsApp Randevu</a>
+                <a href="tel:+905063284956"><i class="fa-solid fa-phone me-1"></i> 0506 328 49 56</a>
+                <a href="https://wa.me/905063284956"><i class="fa-brands fa-whatsapp me-1"></i> WhatsApp Randevu</a>
             </div>
-            <div><i class="fa-solid fa-location-dot me-1"></i> İhsaniye, Sait Çiftçi Cd. No:3, 33070 Akdeniz/Mersin
+            <div><i class="fa-solid fa-location-dot me-1"></i> Yeni Mahallesi, 5313. Sokak No:11/B, 33050 Akdeniz/Mersin
             </div>
         </div>
     </div>
 
-    <nav class="navbar navbar-expand-lg sticky-top">
+    <nav class="navbar navbar-expand-xl sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#"><span class="brand-mark"><i class="fa-solid fa-ear-listen"></i></span>NAZAR
+            <a class="navbar-brand" href="/"><span class="brand-mark"><i class="fa-solid fa-ear-listen"></i></span>NAZAR
                 İŞİTME</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"><span
-                    class="navbar-toggler-icon"></span></button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Menüyü aç veya kapat" aria-controls="mainNav" aria-expanded="false"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="mainNav">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link" href="#hizmetler">Hizmetler</a></li>
                     <li class="nav-item"><a class="nav-link" href="#tur">İşletmeyi Gez</a></li>
                     <li class="nav-item"><a class="nav-link" href="#cihazlar">Cihazlar</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#markalar">Markalar</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#subeler">Şube</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#markalar">Teknoloji</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#subeler">Merkezimiz</a></li>
                     <li class="nav-item"><a class="nav-link" href="#rehber">Rehber</a></li>
                     <li class="nav-item"><a class="nav-link" href="#sss">SSS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#iletisim">İletişim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/iletisim.html">İletişim</a></li>
                 </ul>
-                <a class="btn-main ms-lg-3" href="tel:+905326266756"><i class="fa-solid fa-phone"></i> Hemen Ara</a>
+                <a class="btn-main ms-lg-3" href="tel:+905063284956"><i class="fa-solid fa-phone"></i> Hemen Ara</a>
             </div>
         </div>
     </nav>
 
-    <header class="hero" id="anasayfa">
+    <header class="hero" id="ana-icerik">
         <div id="heroSlider" class="carousel slide hero-slider" data-bs-ride="carousel" data-bs-interval="4300">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="0" class="active" aria-label="Slayt 1"></button>
+                <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="1" aria-label="Slayt 2"></button>
+                <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="2" aria-label="Slayt 3"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -1164,16 +1018,14 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                         <div class="container hero-content">
                             <div class="hero-kicker"><i class="fa-solid fa-location-dot"></i> Mersin Akdeniz İşitme
                                 Merkezi</div>
-                            <h1>Mersin İşitme Cihazları ve Ücretsiz İşitme Testi</h1>
-                            <p>Mersin Akdeniz İhsaniye, Sait Çiftçi Caddesi No:3 adresindeki Nazar İşitme Merkezi’nde
+                            <h1>Mersin İşitme Cihazları ve İşitme Merkezi</h1>
+                            <p>Yeni Mahallesi, 5313. Sokak No:11/B, 33050 Akdeniz/Mersin adresindeki Nazar İşitme Merkezi’nde
                                 işitme cihazı satışı, ücretsiz işitme testi, cihaz ayarı, bakım ve satış sonrası destek
                                 hizmeti sunuyoruz.</p>
                             <div class="hero-actions">
-                                <a href="tel:+905326266756" onclick="return gtag_report_conversion('tel:+905326266756')"
-                                    class="btn-main"><i class="fa-solid fa-phone"></i> Hemen
+                                <a href="tel:+905063284956" onclick="return gtag_report_conversion('tel:+905063284956')" class="btn-main"><i class="fa-solid fa-phone"></i> Hemen
                                     Ara</a>
-                                <a href="https://wa.me/+905326266756?text=Merhaba,%20işitme%20cihazı%20ve%20işitme%20testi%20hakkında%20bilgi%20almak%20istiyorum."
-                                    class="btn-light-strong"><i class="fa-brands fa-whatsapp"></i> WhatsApp Randevu</a>
+                                <a href="https://wa.me/905063284956?text=Merhaba,%20i%C5%9Fitme%20cihaz%C4%B1%20ve%20i%C5%9Fitme%20testi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." class="btn-light-strong"><i class="fa-brands fa-whatsapp"></i> WhatsApp Randevu</a>
                                 <a href="#tur" class="btn-light-strong"><i class="fa-solid fa-store"></i> İşletmeyi
                                     Gez</a>
                             </div>
@@ -1184,13 +1036,10 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                     <div class="hero-slide" style="background-image:url('assets/img/1\ \(16\).jpeg')">
                         <div class="container hero-content">
                             <div class="hero-kicker"><i class="fa-solid fa-wave-square"></i> İşitme Değerlendirme</div>
-                            <h1>İşitme Kaybını Ertelemeyin, İlk Adımı Bugün Atın</h1>
+                            <h2 class="hero-heading">İşitme Kaybını Ertelemeyin, İlk Adımı Bugün Atın</h2>
                             <p>Konuşmaları kaçırma, televizyon sesini yükseltme, kalabalık ortamda zorlanma gibi
                                 durumlarda size uygun çözüm için merkezimize bekliyoruz.</p>
-                            <div class="hero-actions"><a href="tel:+905326266756"
-                                    onclick="return gtag_report_conversion('tel:+905326266756')" class="btn-main"><i
-                                        class="fa-solid fa-phone"></i> Bilgi Al</a><a href="#iletisim"
-                                    class="btn-light-strong"><i class="fa-solid fa-calendar-check"></i> Randevu
+                            <div class="hero-actions"><a href="tel:+905063284956" onclick="return gtag_report_conversion('tel:+905063284956')" class="btn-main"><i class="fa-solid fa-phone"></i> Bilgi Al</a><a href="#iletisim" class="btn-light-strong"><i class="fa-solid fa-calendar-check"></i> Randevu
                                     Oluştur</a></div>
                         </div>
                     </div>
@@ -1198,23 +1047,17 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 <div class="carousel-item">
                     <div class="hero-slide" style="background-image:url('assets/img/1\ \(17\).jpeg')">
                         <div class="container hero-content">
-                            <div class="hero-kicker"><i class="fa-solid fa-headphones"></i> Alman & Danimarka
-                                Teknolojisi</div>
-                            <h1>Şarjlı, Kulak Arkası ve Kanal İçi Cihaz Seçenekleri</h1>
+                            <div class="hero-kicker">İşitme Cihazı Seçenekleri</div>
+                            <h2 class="hero-heading">Şarjlı, Kulak Arkası ve Kanal İçi Cihaz Seçenekleri</h2>
                             <p>İhtiyacınıza ve kullanım alışkanlığınıza göre farklı teknoloji seviyelerinde işitme
                                 cihazı seçenekleri hakkında bilgi alın.</p>
-                            <div class="hero-actions"><a href="#cihazlar" class="btn-main"><i
-                                        class="fa-solid fa-magnifying-glass"></i> Cihazları İncele</a><a
-                                    href="https://wa.me/+905326266756" class="btn-light-strong"><i
-                                        class="fa-brands fa-whatsapp"></i> Fiyat Sor</a></div>
+                            <div class="hero-actions"><a href="#cihazlar" class="btn-main"><i class="fa-solid fa-magnifying-glass"></i> Cihazları İncele</a><a href="https://wa.me/905063284956" class="btn-light-strong"><i class="fa-brands fa-whatsapp"></i> Fiyat Sor</a></div>
                         </div>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev"><span
-                    class="carousel-control-prev-icon"></span></button>
-            <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next"><span
-                    class="carousel-control-next-icon"></span></button>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev" aria-label="Önceki slayt"><span class="carousel-control-prev-icon"></span></button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next" aria-label="Sonraki slayt"><span class="carousel-control-next-icon"></span></button>
         </div>
     </header>
 
@@ -1234,7 +1077,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="trust-item"><i class="fa-solid fa-screwdriver-wrench"></i>
-                            <div><strong>Bakım & Ayar</strong><span>Satış sonrası destek</span></div>
+                            <div><strong>Bakım &amp; Ayar</strong><span>Satış sonrası destek</span></div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -1252,8 +1095,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             <div class="section-title">
                 <div class="eyebrow"><i class="fa-solid fa-star"></i> Hizmetlerimiz</div>
                 <h2>Mersin İşitme Merkezi Hizmetleri</h2>
-                <p>Google’dan gelen müşterinin aradığı her bilgi tek sayfada: işitme testi, cihaz seçimi, bakım, ayar,
-                    kulak kalıbı ve şube iletişimi.</p>
+                <p>İşitme cihazı seçimi, kişisel ayar, bakım ve kulak kalıbı ihtiyaçlarınız için merkezimizden bilgi alabilirsiniz.</p>
             </div>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-4">
@@ -1313,12 +1155,11 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             <div class="section-title">
                 <div class="eyebrow"><i class="fa-solid fa-store"></i> İşletmeyi Gez</div>
                 <h2>Merkezimizi Fotoğraflarla Gezin</h2>
-                <p>Vitrin, İç Mekan, iç mekan, sessiz oda ve oturma alanını göstererek müşteriye gitmeden önce güven
-                    verin.</p>
+                <p>Merkezimizin vitrini, danışmanlık alanı, sessiz oda ve bekleme alanını fotoğraflarla inceleyin.</p>
             </div>
             <div class="tour-wrap">
                 <div class="tour-main">
-                    <img id="tourImage" src="assets/img/1 (19).jpeg" alt="Mersin işitme merkezi vitrin">
+                    <img id="tourImage" src="assets/img/1%20(19).jpeg" alt="Mersin işitme merkezi vitrin" width="1200" height="1600" loading="lazy" decoding="async">
                     <div class="tour-caption">
                         <h3 id="tourTitle" class="fw-bold mb-1">Vitrin</h3>
                         <p id="tourText" class="mb-0">İşitme cihazı modelleri ve merkezin dışarıdan güven veren
@@ -1326,29 +1167,24 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                     </div>
                 </div>
                 <div class="tour-thumbs">
-                    <div class="tour-thumb active" data-img="assets/img/1 (19).jpeg" data-title="Vitrin"
-                        data-text="İşitme cihazı modelleri ve merkezin dışarıdan güven veren görünümü.">
-                        <img src="assets/img/1 (19).jpeg" alt="Vitrin"><span>Vitrin</span>
+                    <div class="tour-thumb active" data-img="assets/img/1 (19).jpeg" data-title="Vitrin" data-text="İşitme cihazı modelleri ve merkezin dışarıdan güven veren görünümü.">
+                        <img src="assets/img/1%20(19).jpeg" alt="Vitrin" width="1200" height="1600" loading="lazy" decoding="async"><span>Vitrin</span>
                     </div>
 
-                    <div class="tour-thumb" data-img="assets/img/içmekan.jpeg" data-title="İç Mekan"
-                        data-text="Müşteri karşılama ve cihaz tanıtım alanı.">
-                        <img src="assets/img/içmekan.jpeg" alt="İç Mekan"><span>İç Mekan</span>
+                    <div class="tour-thumb" data-img="assets/img/içmekan.jpeg" data-title="İç Mekan" data-text="Müşteri karşılama ve cihaz tanıtım alanı.">
+                        <img src="assets/img/i%C3%A7mekan.jpeg" alt="İç Mekan" width="1200" height="1600" loading="lazy" decoding="async"><span>İç Mekan</span>
                     </div>
 
-                    <div class="tour-thumb" data-img="assets/img/karsilama.jpeg" data-title="Karşılama Alanı"
-                        data-text="Danışmanlık ve bekleme alanı.">
-                        <img src="assets/img/karsilama.jpeg" alt="Karşılama Alanı"><span>Karşılama</span>
+                    <div class="tour-thumb" data-img="assets/img/karsilama.jpeg" data-title="Karşılama Alanı" data-text="Danışmanlık ve bekleme alanı.">
+                        <img src="assets/img/karsilama.jpeg" alt="Karşılama Alanı" width="1200" height="1600" loading="lazy" decoding="async"><span>Karşılama</span>
                     </div>
 
-                    <div class="tour-thumb" data-img="assets/img/akustij.jpeg" data-title="Sessiz Oda"
-                        data-text="İşitme testi ve cihaz ayarı için ayrılmış özel alan.">
-                        <img src="assets/img/akustij.jpeg" alt="Sessiz Oda"><span>Sessiz Oda</span>
+                    <div class="tour-thumb" data-img="assets/img/akustij.jpeg" data-title="Sessiz Oda" data-text="İşitme testi ve cihaz ayarı için ayrılmış özel alan.">
+                        <img src="assets/img/akustij.jpeg" alt="Sessiz Oda" width="1200" height="1600" loading="lazy" decoding="async"><span>Sessiz Oda</span>
                     </div>
 
-                    <div class="tour-thumb" data-img="assets/img/oturmaalani.jpeg" data-title="Oturma Alanı"
-                        data-text="Müşterilerin rahat bekleyebileceği oturma alanı.">
-                        <img src="assets/img/oturmaalani.jpeg" alt="Oturma Alanı"><span>Oturma Alanı</span>
+                    <div class="tour-thumb" data-img="assets/img/oturmaalani.jpeg" data-title="Oturma Alanı" data-text="Müşterilerin rahat bekleyebileceği oturma alanı.">
+                        <img src="assets/img/oturmaalani.jpeg" alt="Oturma Alanı" width="1200" height="1600" loading="lazy" decoding="async"><span>Oturma Alanı</span>
                     </div>
                 </div>
             </div>
@@ -1360,13 +1196,12 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             <div class="section-title">
                 <div class="eyebrow"><i class="fa-solid fa-headphones"></i> Cihazlar</div>
                 <h2>İşitme Cihazı Modelleri ve Öne Çıkan Detaylar</h2>
-                <p>Müşteri sadece cihaz görmek istemez; pil/şarj, görünürlük, telefon bağlantısı, konuşma netliği ve
-                    satış sonrası desteği net görmek ister.</p>
+                <p>Şarj veya pil tercihi, cihazın görünümü, telefon uyumluluğu ve satış sonrası desteği birlikte değerlendirin.</p>
             </div>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-3">
                     <div class="product-card">
-                        <div class="product-img"><img src="assets/img/2.png" alt="Şarjlı işitme cihazı Mersin"></div>
+                        <div class="product-img"><img src="assets/img/2.png" alt="Şarjlı işitme cihazı Mersin" width="304" height="245" loading="lazy" decoding="async"></div>
                         <div class="product-body"><span class="pill"><i class="fa-solid fa-battery-full"></i>
                                 Şarjlı</span>
                             <h3>Şarjlı İşitme Cihazı</h3>
@@ -1375,15 +1210,14 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                                 <li><i class="fa-solid fa-check"></i>Kolay günlük kullanım</li>
                                 <li><i class="fa-solid fa-check"></i>Şarj kutusu seçeneği</li>
                                 <li><i class="fa-solid fa-check"></i>Telefon bağlantılı modeller</li>
-                            </ul><a class="btn-outline-main w-100 mt-3"
-                                href="https://wa.me/+905326266756?text=Şarjlı%20işitme%20cihazı%20hakkında%20bilgi%20almak%20istiyorum.">Fiyat
+                            </ul><a class="btn-outline-main w-100 mt-3" href="https://wa.me/905063284956?text=%C5%9Earjl%C4%B1%20i%C5%9Fitme%20cihaz%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.">Fiyat
                                 Bilgisi Al</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="product-card">
-                        <div class="product-img"><img src="assets/img/1.png" alt="Kulak arkası işitme cihazı Mersin">
+                        <div class="product-img"><img src="assets/img/1.png" alt="Kulak arkası işitme cihazı Mersin" width="304" height="245" loading="lazy" decoding="async">
                         </div>
                         <div class="product-body"><span class="pill"><i class="fa-solid fa-ear-listen"></i> Güçlü</span>
                             <h3>Kulak Arkası Cihaz</h3>
@@ -1392,15 +1226,14 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                                 <li><i class="fa-solid fa-check"></i>Geniş kullanım alanı</li>
                                 <li><i class="fa-solid fa-check"></i>Kolay bakım</li>
                                 <li><i class="fa-solid fa-check"></i>Yüksek ses performansı</li>
-                            </ul><a class="btn-outline-main w-100 mt-3"
-                                href="https://wa.me/+905326266756?text=Kulak%20arkası%20işitme%20cihazı%20hakkında%20bilgi%20almak%20istiyorum.">Bilgi
+                            </ul><a class="btn-outline-main w-100 mt-3" href="https://wa.me/905063284956?text=Kulak%20arkas%C4%B1%20i%C5%9Fitme%20cihaz%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.">Bilgi
                                 Al</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="product-card">
-                        <div class="product-img"><img src="assets/img/3.png" alt="Kanal içi işitme cihazı Mersin"></div>
+                        <div class="product-img"><img src="assets/img/3.png" alt="Kanal içi işitme cihazı Mersin" width="304" height="245" loading="lazy" decoding="async"></div>
                         <div class="product-body"><span class="pill"><i class="fa-solid fa-eye-slash"></i>
                                 Estetik</span>
                             <h3>Kanal İçi Cihaz</h3>
@@ -1410,15 +1243,14 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                                 <li><i class="fa-solid fa-check"></i>Daha az görünür tasarım</li>
                                 <li><i class="fa-solid fa-check"></i>Kişiye özel uyum</li>
                                 <li><i class="fa-solid fa-check"></i>Konforlu kullanım</li>
-                            </ul><a class="btn-outline-main w-100 mt-3"
-                                href="https://wa.me/+905326266756?text=Kanal%20içi%20işitme%20cihazı%20hakkında%20bilgi%20almak%20istiyorum.">Bilgi
+                            </ul><a class="btn-outline-main w-100 mt-3" href="https://wa.me/905063284956?text=Kanal%20i%C3%A7i%20i%C5%9Fitme%20cihaz%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.">Bilgi
                                 Al</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="product-card">
-                        <div class="product-img"><img src="assets/img/4.png" alt="İşitme cihazı aksesuarları Mersin">
+                        <div class="product-img"><img src="assets/img/4.png" alt="İşitme cihazı aksesuarları Mersin" width="304" height="245" loading="lazy" decoding="async">
                         </div>
                         <div class="product-body"><span class="pill"><i class="fa-solid fa-toolbox"></i> Aksesuar</span>
                             <h3>Pil, Filtre ve Aksesuar</h3>
@@ -1428,8 +1260,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                                 <li><i class="fa-solid fa-check"></i>Pil ve filtre</li>
                                 <li><i class="fa-solid fa-check"></i>Temizlik ekipmanları</li>
                                 <li><i class="fa-solid fa-check"></i>Bakım desteği</li>
-                            </ul><a class="btn-outline-main w-100 mt-3"
-                                href="https://wa.me/+905326266756?text=İşitme%20cihazı%20aksesuarları%20hakkında%20bilgi%20almak%20istiyorum.">Sor</a>
+                            </ul><a class="btn-outline-main w-100 mt-3" href="https://wa.me/905063284956?text=%C4%B0%C5%9Fitme%20cihaz%C4%B1%20aksesuarlar%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.">Sor</a>
                         </div>
                     </div>
                 </div>
@@ -1440,21 +1271,18 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     <section class="section section-soft" id="markalar">
         <div class="container">
             <div class="section-title">
-                <div class="eyebrow"><i class="fa-solid fa-award"></i> Markalar</div>
-                <h2>Alman ve Danimarka Teknolojisiyle Güven Veren Cihazlar</h2>
-                <p>Buraya çalıştığınız gerçek marka logolarını ekleyin. Marka adları Google Ads kalite puanı ve
-                    kullanıcı güveni için sayfada doğal şekilde geçmeli.</p>
+                <div class="eyebrow"><i class="fa-solid fa-award"></i> Cihaz Özellikleri</div>
+                <h2>İşitme Cihazı Seçerken Değerlendirilen Özellikler</h2>
+                <p>Günlük yaşamınızda ihtiyaç duyduğunuz özellikleri konuşarak farklı cihaz seçenekleri hakkında bilgi alın. Marka ve model bilgilerini merkezimizden öğrenebilirsiniz.</p>
             </div>
             <div class="brand-grid">
-                <div class="brand-card"><img src="assets/img/am.png" alt="İşitme cihazı markası"><strong>Alman
-                        Teknolojisi</strong><span class="muted">Net konuşma odaklı modeller</span></div>
-                <div class="brand-card"><img src="assets/img/1.png" alt="Danimarka işitme cihazı"><strong>Danimarka
-                        Teknolojisi</strong><span class="muted">Doğal
+                <div class="brand-card"><img src="assets/img/am.png" alt="İşitme cihazı seçenekleri" width="304" height="245" loading="lazy" decoding="async"><strong>Kişisel Cihaz Ayarı</strong><span class="muted">Kişisel ayar seçenekleri</span></div>
+                <div class="brand-card"><img src="assets/img/1.png" alt="İşitme cihazı seçenekleri" width="304" height="245" loading="lazy" decoding="async"><strong>Kulak Arkası Seçenekleri</strong><span class="muted">Doğal
                         ses deneyimi</span></div>
-                <div class="brand-card"><img src="assets/img/2.png" alt="Şarjlı işitme cihazı markası"><strong>Şarjlı
+                <div class="brand-card"><img src="assets/img/2.png" alt="İşitme cihazı seçenekleri" width="304" height="245" loading="lazy" decoding="async"><strong>Şarjlı
                         Modeller</strong><span class="muted">Pratik
                         günlük kullanım</span></div>
-                <div class="brand-card"><img src="assets/img/akıllı.png" alt="Bluetooth işitme cihazı"><strong>Akıllı
+                <div class="brand-card"><img src="assets/img/ak%C4%B1ll%C4%B1.png" alt="İşitme cihazı seçenekleri" width="304" height="245" loading="lazy" decoding="async"><strong>Akıllı
                         Cihazlar</strong><span class="muted">Telefon bağlantısı</span></div>
             </div>
         </div>
@@ -1474,10 +1302,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                             <li><i class="fa-solid fa-circle-check"></i>Bakım, temizlik, ayar ve kullanım desteği</li>
                         </ul>
                     </div>
-                    <div class="col-lg-5 text-lg-end"><a href="tel:+905326266756" class="btn-light-strong mb-2"><i
-                                class="fa-solid fa-phone"></i> Hemen Ara</a><br><a
-                            href="https://wa.me/+905326266756?text=Merhaba,%20işitme%20cihazı%20için%20randevu%20almak%20istiyorum."
-                            class="btn-main"><i class="fa-brands fa-whatsapp"></i> WhatsApp Randevu</a></div>
+                    <div class="col-lg-5 text-lg-end"><a href="tel:+905063284956" class="btn-light-strong mb-2"><i class="fa-solid fa-phone"></i> Hemen Ara</a><br><a href="https://wa.me/905063284956?text=Merhaba,%20i%C5%9Fitme%20cihaz%C4%B1%20i%C3%A7in%20randevu%20almak%20istiyorum." class="btn-main"><i class="fa-brands fa-whatsapp"></i> WhatsApp Randevu</a></div>
                 </div>
             </div>
         </div>
@@ -1488,28 +1313,15 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             <div class="section-title">
                 <div class="eyebrow"><i class="fa-solid fa-images"></i> Galeri</div>
                 <h2>Gerçek İşletme ve Ürün Görselleri</h2>
-                <p>Google işletme ile uyumlu olması için stok fotoğraf yerine çektiğin gerçek dükkan, personel, ürün ve
-                    hizmet alanı görsellerini kullan.</p>
+                <p>Merkezimizin iç ve dış mekan fotoğraflarını, cihaz örneklerini ve danışmanlık alanlarını inceleyebilirsiniz.</p>
             </div>
             <div class="row g-4">
-                <div class="col-md-6 col-lg-4"><a class="gallery-item glightbox" href="assets/img/1 (19).jpeg"><img
-                            src="assets/img/tabela.jpeg" alt="Mersin işitme merkezi dış cephe"><span
-                            class="gallery-label">Dış Cephe</span></a></div>
-                <div class="col-md-6 col-lg-4"><a class="gallery-item glightbox" href="assets/img/içmekan.jpeg"><img
-                            src="assets/img/içmekan.jpeg" alt="Mersin işitme merkezi iç mekan"><span
-                            class="gallery-label">İç Mekan</span></a></div>
-                <div class="col-md-6 col-lg-4"><a class="gallery-item glightbox" href="assets/img/galeri-3.jpg"><img
-                            src="assets/img/1.png" alt="İşitme cihazı ürünleri"><span
-                            class="gallery-label">Ürünler</span></a></div>
-                <div class="col-md-6 col-lg-4"><a class="gallery-item glightbox" href="assets/img/galeri-4.jpg"><img
-                            src="assets/img/akustij.jpeg" alt="Sessiz oda işitme testi"><span
-                            class="gallery-label">Sessiz Oda</span></a></div>
-                <div class="col-md-6 col-lg-4"><a class="gallery-item glightbox" href="assets/img/galeri-5.jpg"><img
-                            src="assets/img/karsilama.jpeg" alt="İşitme cihazı danışmanlığı"><span
-                            class="gallery-label">Danışmanlık</span></a></div>
-                <div class="col-md-6 col-lg-4"><a class="gallery-item glightbox" href="assets/img/galeri-6.jpg"><img
-                            src="assets/img/akustikoda.jpeg" alt="İşitme cihazı bakım alanı"><span
-                            class="gallery-label">Bakım Alanı</span></a></div>
+                <div class="col-md-6 col-lg-4"><a class="gallery-item glightbox" href="assets/img/tabela.jpeg"><img src="assets/img/tabela.jpeg" alt="Mersin işitme merkezi dış cephe" width="1200" height="1600" loading="lazy" decoding="async"><span class="gallery-label">Dış Cephe</span></a></div>
+                <div class="col-md-6 col-lg-4"><a class="gallery-item glightbox" href="assets/img/i%C3%A7mekan.jpeg"><img src="assets/img/i%C3%A7mekan.jpeg" alt="Mersin işitme merkezi iç mekan" width="1200" height="1600" loading="lazy" decoding="async"><span class="gallery-label">İç Mekan</span></a></div>
+                <div class="col-md-6 col-lg-4"><a class="gallery-item glightbox" href="assets/img/1.png"><img src="assets/img/1.png" alt="İşitme cihazı ürünleri" width="304" height="245" loading="lazy" decoding="async"><span class="gallery-label">Ürünler</span></a></div>
+                <div class="col-md-6 col-lg-4"><a class="gallery-item glightbox" href="assets/img/akustij.jpeg"><img src="assets/img/akustij.jpeg" alt="Sessiz oda işitme testi" width="1200" height="1600" loading="lazy" decoding="async"><span class="gallery-label">Sessiz Oda</span></a></div>
+                <div class="col-md-6 col-lg-4"><a class="gallery-item glightbox" href="assets/img/karsilama.jpeg"><img src="assets/img/karsilama.jpeg" alt="İşitme cihazı danışmanlığı" width="1200" height="1600" loading="lazy" decoding="async"><span class="gallery-label">Danışmanlık</span></a></div>
+                <div class="col-md-6 col-lg-4"><a class="gallery-item glightbox" href="assets/img/akustikoda.jpeg"><img src="assets/img/akustikoda.jpeg" alt="Nazar İşitme değerlendirme alanı" width="1200" height="1600" loading="lazy" decoding="async"><span class="gallery-label">Değerlendirme Alanı</span></a></div>
             </div>
         </div>
     </section>
@@ -1517,8 +1329,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     <section class="section">
         <div class="container">
             <div class="">
-                <div class="col-lg-6"><img class="w-100 rounded-5 shadow" src="assets/img/1.png"
-                        alt="İşitme cihazı danışmanlığı Mersin"></div>
+                <div class="col-lg-6"><img class="w-100 rounded-5 shadow" src="assets/img/1.png" alt="İşitme cihazı danışmanlığı Mersin" width="304" height="245" loading="lazy" decoding="async"></div>
                 <div class="col-lg-6">
                     <div class="eyebrow text-primary fw-bold mb-2"><i class="fa-solid fa-list-check"></i> Süreç</div>
                     <h2 class="fw-bold display-6">3 Adımda Size Uygun Cihazı Belirleyelim</h2>
@@ -1556,18 +1367,18 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             <div class="section-title">
                 <div class="eyebrow"><i class="fa-solid fa-location-dot"></i> Şubemiz</div>
                 <h2>Mersin Akdeniz Şubemiz</h2>
-                <p>Nazar İşitme Merkezi, Mersin Akdeniz İhsaniye’de Sait Çiftçi Caddesi üzerinde kolay ulaşılabilir konumda hizmet verir.</p>
+                <p>Nazar İşitme Merkezi, Mersin Akdeniz Yeni Mahallesi, 5313. Sokak No:11/B adresinde kolay ulaşılabilir konumda hizmet verir.</p>
             </div>
             <div class="row g-4 justify-content-center">
                 <div class="col-lg-7">
                     <div class="branch-card">
-                        <h3>Akdeniz / İhsaniye Şubesi</h3>
-                        <p class="muted"><i class="fa-solid fa-map-pin me-2"></i>İhsaniye, Sait Çiftçi Cd. No:3, 33070 Akdeniz/Mersin</p>
+                        <h3>Akdeniz / Yeni Mahallesi Merkezimiz</h3>
+                        <p class="muted"><i class="fa-solid fa-map-pin me-2"></i>Yeni Mahallesi, 5313. Sokak No:11/B, 33050 Akdeniz/Mersin</p>
                         <p class="muted">Mersin işitme cihazı, ücretsiz işitme testi, cihaz ayarı, kulak kalıbı, pil, filtre ve işitme cihazı bakımı için merkezimize ulaşabilirsiniz.</p>
                         <div class="d-flex flex-wrap gap-2 mt-3">
-                            <a class="btn-main" href="https://maps.google.com/?q=İhsaniye Sait Çiftçi Cd. No:3 Akdeniz Mersin">Yol Tarifi Al</a>
-                            <a class="btn-outline-main" href="tel:+905326266756">Şubeyi Ara</a>
-                            <a class="btn-outline-main" href="https://wa.me/+905326266756?text=Merhaba,%20Nazar%20İşitme%20Merkezi%20için%20randevu%20almak%20istiyorum.">WhatsApp</a>
+                            <a class="btn-main" href="https://www.google.com/maps/dir/?api=1&amp;destination=Nazar%20%C4%B0%C5%9Fitme%2C%20Yeni%20Mahallesi%2C%205313.%20Sokak%20No%3A11%2FB%2C%2033050%20Akdeniz%2FMersin" target="_blank" rel="noopener noreferrer">Yol Tarifi Al</a>
+                            <a class="btn-outline-main" href="tel:+905063284956">Şubeyi Ara</a>
+                            <a class="btn-outline-main" href="https://wa.me/905063284956?text=Merhaba,%20Nazar%20%C4%B0%C5%9Fitme%20Merkezi%20i%C3%A7in%20randevu%20almak%20istiyorum.">WhatsApp</a>
                         </div>
                     </div>
                 </div>
@@ -1598,7 +1409,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 <div class="accordion-item">
                     <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f3">Nazar İşitme Merkezi nerede?</button></h3>
                     <div id="f3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">Merkezimiz İhsaniye, Sait Çiftçi Cd. No:3, 33070 Akdeniz/Mersin adresindedir.</div>
+                        <div class="accordion-body">Merkezimiz Yeni Mahallesi, 5313. Sokak No:11/B, 33050 Akdeniz/Mersin adresindedir.</div>
                     </div>
                 </div>
                 <div class="accordion-item">
@@ -1646,7 +1457,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 <div class="accordion-item">
                     <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f11">Akdeniz işitme cihazı hizmeti veriyor musunuz?</button></h3>
                     <div id="f11" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">Evet. Mersin Akdeniz İhsaniye’deki merkezimizde işitme cihazı satışı, bakım, ayar, kulak kalıbı ve danışmanlık hizmetleri sunuyoruz.</div>
+                        <div class="accordion-body">Evet. Mersin Akdeniz Yeni Mahallesi’ndeki merkezimizde işitme cihazı satışı, bakım, ayar, kulak kalıbı ve danışmanlık hizmetleri sunuyoruz.</div>
                     </div>
                 </div>
                 <div class="accordion-item">
@@ -1709,36 +1520,30 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 
     <section class="section section-blue" id="iletisim">
         <div class="container">
-            <div class="">
+            <div class="row g-4 align-items-center">
                 <div class="col-lg-6">
                     <h2 class="fw-bold display-5">İşitme Cihazı İçin Hemen Bilgi Alın</h2>
                     <p>Telefonla arayın veya WhatsApp’tan yazın. Size en uygun cihaz, bakım, ayar ve randevu seçenekleri
                         için yardımcı olalım.</p>
-                    <div class="d-flex flex-wrap gap-2"><a class="btn-light-strong" href="tel:+905326266756"><i
-                                class="fa-solid fa-phone"></i> Hemen Ara</a><a class="btn-main"
-                            href="https://wa.me/+905326266756?text=Merhaba,%20işitme%20cihazı%20hakkında%20bilgi%20almak%20istiyorum."><i
-                                class="fa-brands fa-whatsapp"></i> WhatsApp</a></div>
+                    <div class="d-flex flex-wrap gap-2"><a class="btn-light-strong" href="tel:+905063284956"><i class="fa-solid fa-phone"></i> Hemen Ara</a><a class="btn-main" href="https://wa.me/905063284956?text=Merhaba,%20i%C5%9Fitme%20cihaz%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></div>
                 </div>
                 <div class="col-lg-6">
                     <div class="lead-form">
                         <h3 class="fw-bold mb-3 text-dark">Randevu Talep Formu</h3>
                         <form id="leadForm">
-                            <div class="mb-3"><input id="ad" class="form-control" placeholder="Ad Soyad" required></div>
-                            <div class="mb-3"><input id="tel" class="form-control" placeholder="Telefon Numaranız"
-                                    required></div>
-                            <div class="mb-3"><select id="konu" class="form-select">
+                            <div class="mb-3"><input id="ad" class="form-control" placeholder="Ad Soyad" required aria-label="Ad Soyad" type="text" autocomplete="name" maxlength="80"></div>
+                            <div class="mb-3"><input id="tel" class="form-control" placeholder="Telefon Numaranız" required aria-label="Telefon Numaranız" type="tel" autocomplete="tel" maxlength="24" inputmode="tel"></div>
+                            <div class="mb-3"><select id="konu" class="form-select" aria-label="Bilgi almak istediğiniz konu">
                                     <option>İşitme cihazı fiyatı öğrenmek istiyorum</option>
                                     <option>Ücretsiz işitme testi için randevu istiyorum</option>
                                     <option>Cihaz bakım ve ayar hizmeti istiyorum</option>
                                     <option>Kulak kalıbı hakkında bilgi almak istiyorum</option>
                                 </select></div><button class="btn-main w-100" type="submit">WhatsApp’a Gönder</button>
-                        </form>
+                        <p class="form-note">Form, WhatsApp’ta bir mesaj taslağı açar. Randevu talebiniz mesajı gönderdiğinizde bize ulaşır.</p></form>
                     </div>
                 </div>
             </div>
-            <div class="map-wrap mt-5"><iframe
-                    src="https://www.google.com/maps?q=İhsaniye,%20Sait%20Çiftçi%20Cd.%20No:3,%2033070%20Akdeniz/Mersin&output=embed"
-                    width="100%" height="390" style="border:0" loading="lazy"></iframe></div>
+            <div class="map-wrap mt-5"><iframe src="https://www.google.com/maps?q=Yeni%20Mahallesi%2C%205313.%20Sokak%20No%3A11%2FB%2C%2033050%20Akdeniz%2FMersin&amp;output=embed" width="100%" height="390" style="border:0" loading="lazy" title="Nazar İşitme konumu: Yeni Mahallesi, 5313. Sokak No:11/B, 33050 Akdeniz/Mersin" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
         </div>
     </section>
     <section class="section" id="hizmet-bolgeleri">
@@ -1753,7 +1558,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 <div class="col-lg-6"><div class="cardx"><h3>Hizmet Verdiğimiz Bölgeler</h3><ul class="detail-list"><li><i class="fa-solid fa-check"></i>Akdeniz işitme cihazı ve işitme testi hizmetleri</li><li><i class="fa-solid fa-check"></i>Yenişehir işitme cihazı danışmanlığı</li><li><i class="fa-solid fa-check"></i>Mezitli işitme cihazı bakım ve ayar desteği</li><li><i class="fa-solid fa-check"></i>Toroslar işitme cihazı ve kulak kalıbı hizmetleri</li><li><i class="fa-solid fa-check"></i>Mersin merkez ücretsiz işitme testi ve cihaz danışmanlığı</li><li><i class="fa-solid fa-check"></i>Şarjlı, kulak arkası ve kanal içi cihaz seçenekleri</li></ul></div></div>
             </div>
             <div class="row g-4 mt-2">
-                <div class="col-lg-3 col-md-6"><div class="cardx"><h3>Akdeniz İşitme Cihazı</h3><p class="muted">Akdeniz İhsaniye’deki merkezimizde işitme cihazı satışı, cihaz ayarı, bakım, kulak kalıbı ve ücretsiz ön görüşme hizmetleri sunuyoruz.</p></div></div>
+                <div class="col-lg-3 col-md-6"><div class="cardx"><h3>Akdeniz İşitme Cihazı</h3><p class="muted">Akdeniz Yeni Mahallesi’ndeki merkezimizde işitme cihazı satışı, cihaz ayarı, bakım, kulak kalıbı ve ücretsiz ön görüşme hizmetleri sunuyoruz.</p></div></div>
                 <div class="col-lg-3 col-md-6"><div class="cardx"><h3>Yenişehir İşitme Cihazı</h3><p class="muted">Yenişehir’den gelen kullanıcılar için şarjlı, kulak arkası, kanal içi ve akıllı işitme cihazı seçenekleri hakkında bilgi veriyoruz.</p></div></div>
                 <div class="col-lg-3 col-md-6"><div class="cardx"><h3>Mezitli İşitme Cihazı</h3><p class="muted">Mezitli bölgesinde işitme cihazı arayan kullanıcılar için cihaz seçimi, bakım ve satış sonrası destek hizmetleri sağlıyoruz.</p></div></div>
                 <div class="col-lg-3 col-md-6"><div class="cardx"><h3>Toroslar İşitme Cihazı</h3><p class="muted">Toroslar’dan gelen kullanıcılar için işitme testi, cihaz ayarı, pil, filtre ve kulak kalıbı ihtiyaçlarına yönelik destek veriyoruz.</p></div></div>
@@ -1766,13 +1571,13 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             <div class="section-title">
                 <div class="eyebrow"><i class="fa-solid fa-book-open"></i> Mersin İşitme Rehberi</div>
                 <h2>İşitme Cihazı Seçimi İçin Kısa Rehber</h2>
-                <p>Aşağıdaki bağlantılar hem kullanıcıların aradığı bilgiye hızlı ulaşmasını sağlar hem de Google’ın site içi bağlantıları daha iyi anlamasına yardımcı olur.</p>
+                <p>Cihaz tipleri ve seçim süreci hakkında daha ayrıntılı bilgi için rehber sayfalarımızı inceleyin.</p>
             </div>
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6"><div class="cardx"><h3>Şarjlı İşitme Cihazı</h3><p class="muted">Pil değiştirmek istemeyen kullanıcılar için pratik kullanım sunan modeller.</p><a href="sarjli-isitme-cihazi-mersin.html" class="btn-outline-main mt-2">İncele</a></div></div>
                 <div class="col-lg-3 col-md-6"><div class="cardx"><h3>Kulak Arkası Cihaz</h3><p class="muted">Güçlü performans, kolay bakım ve geniş kullanım alanı sunan cihaz tipi.</p><a href="kulak-arkasi-isitme-cihazi-mersin.html" class="btn-outline-main mt-2">İncele</a></div></div>
                 <div class="col-lg-3 col-md-6"><div class="cardx"><h3>Kanal İçi Cihaz</h3><p class="muted">Daha estetik ve küçük tasarım isteyen kullanıcılar için kanal içi seçenekler.</p><a href="kanal-ici-isitme-cihazi-mersin.html" class="btn-outline-main mt-2">İncele</a></div></div>
-                <div class="col-lg-3 col-md-6"><div class="cardx"><h3>Mersin İşitme Cihazı</h3><p class="muted">Mersin’de işitme cihazı, bakım, ayar ve işitme testi hakkında detaylı bilgi.</p><a href="mersin-isitme-cihazi.html" class="btn-outline-main mt-2">İncele</a></div></div>
+                <div class="col-lg-3 col-md-6"><div class="cardx"><h3>Cihaz Seçimi ve Randevu</h3><p class="muted">Mersin’de işitme cihazı, bakım, ayar ve işitme testi hakkında detaylı bilgi.</p><a href="mersin-isitme-cihazi.html" class="btn-outline-main mt-2">İncele</a></div></div>
             </div>
         </div>
     </section>
@@ -1786,49 +1591,24 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                         destek.</p>
                 </div>
                 <div class="col-lg-2">
-                    <h5>Menü</h5><a href="#hizmetler">Hizmetler</a><a href="#tur">İşletmeyi Gez</a><a
-                        href="#cihazlar">Cihazlar</a><a href="#subeler">Şubeler</a>
+                    <h5>Menü</h5><a href="#hizmetler">Hizmetler</a><a href="#tur">İşletmeyi Gez</a><a href="#cihazlar">Cihazlar</a><a href="#subeler">Merkezimiz</a>
                 </div>
                 <div class="col-lg-3">
-                    <h5>Hizmetler</h5><a href="#hizmetler">İşitme Testi</a><a href="#hizmetler">İşitme Cihazı</a><a
-                        href="#hizmetler">Cihaz Bakımı</a><a href="#hizmetler">Kulak Kalıbı</a>
+                    <h5>Hizmetler</h5><a href="#hizmetler">İşitme Testi</a><a href="#hizmetler">İşitme Cihazı</a><a href="#hizmetler">Cihaz Bakımı</a><a href="#hizmetler">Kulak Kalıbı</a>
                 </div>
                 <div class="col-lg-3">
                     <h5>İletişim</h5>
-                    <p>İhsaniye, Sait Çiftçi Cd. No:3, 33070 Akdeniz/Mersin</p><a href="tel:+905326266756">+90 532 626
-                        6756</a><a href="https://wa.me/+905326266756">WhatsApp Randevu</a>
-                </div>
+                    <p>Yeni Mahallesi, 5313. Sokak No:11/B, 33050 Akdeniz/Mersin</p><a href="tel:+905063284956">0506 328 49 56</a><a href="https://wa.me/905063284956">WhatsApp Randevu</a>
+                <a href="/iletisim.html">Adres ve Yol Tarifi</a></div>
             </div>
             <hr class="border-secondary my-4">
-            <div class="text-center">© 2026 Mersin İşitme Merkezi. Tüm hakları saklıdır.</div>
+            <div class="text-center">© 2026 Nazar İşitme Merkezi. Tüm hakları saklıdır.</div>
         </div>
     </footer>
 
-    <div class="fixed-actions"><a class="fixed-call" href="tel:+905326266756" aria-label="Telefon"><i
-                class="fa-solid fa-phone"></i></a><a class="fixed-wa" href="https://wa.me/+905326266756"
-            aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></div>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <div class="fixed-actions"><a class="fixed-call" href="tel:+905063284956" aria-label="Nazar İşitme’yi arayın: 0506 328 49 56"><i class="fa-solid fa-phone"></i></a><a class="fixed-wa" href="https://wa.me/905063284956" aria-label="Nazar İşitme WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-    <script>
-        const lightbox = GLightbox({ selector: '.glightbox' });
-        $('.nav-link').on('click', function () { $('.navbar-collapse').collapse('hide'); });
-        $('.tour-thumb').on('click', function () {
-            $('.tour-thumb').removeClass('active');
-            $(this).addClass('active');
-            $('#tourImage').attr('src', $(this).data('img')).attr('alt', 'Mersin işitme merkezi ' + $(this).data('title'));
-            $('#tourTitle').text($(this).data('title'));
-            $('#tourText').text($(this).data('text'));
-        });
-        $('#leadForm').on('submit', function (e) {
-            e.preventDefault();
-            const ad = $('#ad').val();
-            const tel = $('#tel').val();
-            const konu = $('#konu').val();
-            const msg = `Merhaba, ismim ${ad}. Telefon numaram: ${tel}. ${konu}`;
-            window.open('https://wa.me/+905326266756?text=' + encodeURIComponent(msg), '_blank');
-        });
-    </script>
-</body>
+    <script src="/assets/js/site.js" defer></script></body>
 
 </html>
