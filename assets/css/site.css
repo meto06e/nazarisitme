@@ -14,3 +14,31 @@ img { max-width: 100%; }
 @media (max-width: 1199px) { .navbar-brand { font-size: 20px; } .nav-link { font-size: 14px; } .navbar .btn-main { padding: 11px 16px; } }
 @media (max-width: 767px) { .contact-hero { min-height: auto; padding: 54px 0; } .contact-map { height: 320px; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+
+
+/* Aynı grid hücresindeki slaytlar en uzun içeriğin alanını paylaşır. */
+#heroSlider .carousel-inner { display: grid; }
+#heroSlider .carousel-inner::after { display: none; }
+#heroSlider .carousel-item { grid-area: 1 / 1; float: none; margin-right: 0; display: block; visibility: hidden; pointer-events: none; }
+#heroSlider .carousel-item.active, #heroSlider .carousel-item-next, #heroSlider .carousel-item-prev { visibility: visible; }
+#heroSlider .carousel-item.active { pointer-events: auto; }
+#heroSlider .hero-slide { height: 100%; min-height: 740px; }
+#heroSlider .hero-content { padding: 100px 58px 92px !important; }
+#heroSlider .hero-kicker { max-width: 100%; }
+#heroSlider .carousel-control-prev, #heroSlider .carousel-control-next { width: 5%; max-width: 64px; }
+.fa-solid, .fa-brands { font-style: normal; line-height: 1; }
+.fa-solid > svg, .fa-brands > svg { display: inline-block; height: 1em; vertical-align: -.125em; fill: currentColor; overflow: visible; }
+@media (max-width: 991px) {
+  #heroSlider .hero-slide { min-height: 0; }
+  #heroSlider .hero-content { padding: 72px 42px 78px !important; }
+}
+@media (max-width: 767px) {
+  #heroSlider .hero-content { padding: 56px 30px 68px !important; }
+  #heroSlider h1, #heroSlider .hero-heading { font-size: clamp(30px, 8.5vw, 38px); line-height: 1.1; letter-spacing: -1px; }
+  #heroSlider p { font-size: 16px; line-height: 1.6; }
+  #heroSlider .hero-kicker { font-size: 13px; padding: 8px 10px; margin-bottom: 16px; }
+  #heroSlider .hero-actions { gap: 10px; margin-top: 22px; }
+  #heroSlider .hero-actions a { padding: 12px 14px; }
+  #heroSlider .carousel-control-prev, #heroSlider .carousel-control-next { width: 26px; }
+  #heroSlider .carousel-control-prev-icon, #heroSlider .carousel-control-next-icon { width: 20px; height: 20px; }
+}

@@ -59,3 +59,18 @@ Sıralama yükselişi Google'ın taraması, yerel profil ve diğer rekabet
 sinyalleriyle birlikte oluşur; paket tek başına ilk sıra garantisi vermez.
 
 Bu ZIP hazırlanmıştır; canlı siteye otomatik yüklenmemiştir.
+
+GENEL TEST SONRASI DÜZELTMELER | 04.10.2026
+- Mobil sliderda tüm slaytlar aynı alanı paylaşır; metin uzunluğu değişince
+  alttaki bölümler yukarı/aşağı hareket etmez. Metinler kesilmez.
+- Mobil başlık, kenar boşlukları ve ok/düğme yerleşimi düzenlendi.
+- Fotoğraflar WebP formatında hafifletildi; kaynak görseller pakette korundu.
+- Kullanılan orijinal Font Awesome ikonları SVG olarak sayfalara eklendi;
+  ikon fontu ve tüm ikon kütüphanesi için ayrı ağ isteği kaldırıldı.
+- Sayfalarda kullanılan Bootstrap stilleri ayıklanıp sayfa başlığına alındı.
+- Ortak stiller sayfalara dahil edildi. assets/css/site.css aynı stillerin
+  düzenlenebilir kopyasıdır; bu sürüm HTML içindeki site-shared-style'ı kullanır.
+- Bootstrap ve GLightbox betikleri yerel dosyalardan defer ile yüklenir.
+- Galeri stilinin ilk ekranı bekletmesi engellendi.
+Bu sürümün canlıya yüklenmesinden sonra PageSpeed yeniden ölçülmelidir;
+önceki mobil 59 puanı bu düzeltmelerden önceki sürümün ölçümüdür.
