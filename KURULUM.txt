@@ -1,76 +1,61 @@
-NAZAR İŞİTME — GÜNCEL SİTE PAKETİ | 04.10.2026
+NAZAR İŞİTME — 43 SAYFALIK SİTE | 16.10.2026
 
-DOĞRULANAN İŞLETME BİLGİLERİ
-Telefon ve WhatsApp: 0506 328 49 56
-Adres: Yeni Mahallesi, 5313. Sokak No:11/B, 33050 Akdeniz/Mersin
-Alan adı: https://nazarisitmecihazlari.com/
-Bu bilgiler işletme sahibinin paylaştığı Google işletme ekranına göre güncellendi.
+BU PAKET CANLIYA OTOMATİK YÜKLENMEDİ.
 
-YAYINLAMA
 1. Mevcut sitenizin dosyalarını yedekleyin.
-2. ZIP'i açın. İçindeki index.html, diğer HTML dosyaları, assets klasörü,
-   robots.txt, sitemap.xml, favicon.svg, CNAME ve .nojekyll dosyalarını
-   mevcut sitenizin yayınlandığı dizine yükleyin. Dosyaları bir üst klasöre
-   koymayın; index.html site kökünde bulunmalıdır.
-3. Mevcut GitHub Pages ve özel alan adı ayarlarınızı koruyun. Paket yeni
-   bir hosting veya DNS ayarı gerektirmez. GitHub Pages'te .htaccess gerekmez.
-4. Yayından sonra altı sayfayı, arama/WhatsApp düğmelerini ve görselleri
-   telefon ve bilgisayarda kontrol edin. Form bir WhatsApp mesaj taslağı
-   açar; kullanıcı mesajı gönderdiğinde talep işletmeye ulaşır.
-5. https://nazarisitmecihazlari.com/sitemap.xml adresini Search Console'a
-   gönderin. Ana sayfa ve iletisim.html için URL Denetleme ile dizine ekleme
-   isteği oluşturun; diğer sayfaların seçilen standart URL'sini kontrol edin.
+2. ZIP içeriğini yayın köküne çıkarın: index.html, assets, diğer HTML,
+   sitemap.xml, robots.txt ve favicon dosyaları aynı kökte bulunmalı.
+   Bir üst nazarisitme klasörünün içine koymayın.
+3. GitHub Pages kullanıyorsanız CNAME ve .nojekyll dosyalarını koruyun.
+   Özel alan adı ve Enforce HTTPS ayarını koruyun. Mevcut kaynak deponuzun
+   yayın dalına bu dosyaları yükleyin. ZIP eski .git klasörünü içermez.
+4. Apache/cPanel kullanıyorsanız .htaccess dosyasını da yükleyin. Kurallar
+   uygun modüllerde sıkıştırma, uzun varlık önbelleği, yönlendirme ve
+   güvenlik başlıklarını sağlar. CDN varsa eski önbelleği temizleyin.
+5. https://nazarisitmecihazlari.com/sitemap.xml dosyasını Search Console'a
+   gönderin. Ana sayfa, rehber.html ve birkaç temel rehberi URL Denetleme
+   ile kontrol edin. Site haritası göndermek indeks garantisi vermez.
+6. Telefon ve WhatsApp bağlantılarını, mobil menüyü, rehber aramasını ve
+   galeriyi yayında kontrol edin. WhatsApp formu mesaj taslağı açar;
+   gönderim ve randevu teyidi kullanıcı/işletme arasında gerçekleşir.
+7. GA4 ve Ads'in mevcut kimlikleri korunur. Ölçüm çerezleri kabul edilince
+   tek Google yükleyicisi açılır. İzinli tarayıcıda Tag Assistant / DebugView
+   ile phone_click, whatsapp_click, whatsapp_form_submit olaylarını kontrol
+   edin. Telefon Ads dönüşüm etiketi korunmuştur. Tıklama, tamamlanan
+   görüşme veya satış değildir; hesapta mükerrer dönüşüm sayımını kontrol edin.
+8. Güncel SGK sözleşme durumu, stok, fiyat, çalışma saati ve uzman unvanı
+   doğrulanmadan eklenmez. Yayıncı içerikleri ve kaynakları düzenli gözden
+   geçirmelidir. Tıbbi tanı veya sonuç garantisi sunulmaz.
 
-SAYFALAR
-- / : Mersin işitme cihazları ve merkez hizmetleri
-- /mersin-isitme-cihazi.html : cihaz seçimi, teklif ve randevu rehberi
-- /sarjli-isitme-cihazi-mersin.html : şarjlı cihaz rehberi
-- /kulak-arkasi-isitme-cihazi-mersin.html : kulak arkası cihaz rehberi
-- /kanal-ici-isitme-cihazi-mersin.html : kanal içi cihaz rehberi
-- /iletisim.html : doğrulanan adres, telefon, harita ve ulaşım
+HOSTING SINIRI
+GitHub Pages .htaccess veya özel HTTP başlıklarını uygulamaz. Görsel
+boyutlandırma, tek betik, sürümlü varlıklar, meta CSP ve referrer iyileştirmesi
+GitHub'da da çalışır. Ancak 1 yıllık Cache-Control, MIME nosniff ve diğer
+yanıt başlıklarını GitHub'a dosya yükleyerek değiştirmek mümkün değildir.
+Bu kontrollerin tamamı için başlık yönetebilen hosting/CDN gerekir.
+Yayın sonrası PageSpeed ve HTTP başlıkları tekrar ölçülmelidir.
 
-UYGULANAN DÜZENLEMELER
-- Tüm sayfalardaki görünür adres ve telefon, tel/WhatsApp bağlantıları,
-  form hedefi, harita ve LocalBusiness verisi birlikte güncellendi.
-- Örnek telefonlar ve eski adres bilgileri temizlendi.
-- Başlık, açıklama, standart URL, sosyal paylaşım metinleri ve işletme
-  yapılandırılmış verileri sayfanın amacına göre düzenlendi.
-- Ana sayfada tek ana başlık kullanıldı; cihaz rehberleri ayrıştırıldı.
-- Eksik görsel yolları düzeltildi; resim boyutları, lazy loading,
-  async decoding ve ilk slayt görseli için ön yükleme eklendi.
-- robots.txt gerçek alan adına bağlandı; sitemap altı sayfayı kapsıyor.
-- Menü ve alt bilgilerden iletişim/ulaşım sayfasına bağlantı eklendi.
-- Formlar ve işletme fotoğraf geçişleri harici jQuery bağımlılığından çıkarıldı.
-- Mevcut GA4 G-2JPQCH1B8C etiketi altı sayfaya tamamlandı. phone_click,
-  whatsapp_click ve whatsapp_form_submit olaylarında formdaki ad, telefon
-  veya mesaj metni gönderilmez. Hesapta olayları kontrol ederek gerekirse
-  önemli etkinlik olarak seçebilirsiniz.
-- Mevcut Google Ads etiketi ve dönüşüm kimliği korundu. Reklam kampanyası,
-  bütçe veya yeni reklam ayarı yapılmadı.
+İŞLETME
+Yeni Mahallesi, 5313. Sokak No:11/B, 33050 Akdeniz/Mersin
+Telefon / WhatsApp: 0506 328 49 56
+Alan adı: https://nazarisitmecihazlari.com/
 
-YAYINDAN SONRA SEO TAKİBİ
-Google işletme profilindeki adres ve telefon sitedekiyle aynı olmalı.
-Profilin web sitesi alanında ana alan adını kullanın. Gerçek işletme
-fotoğraflarını ve çalışma saatlerini güncel tutun; gerçek müşterilerden
-yorum isteyin. Yeni şube, unvan, bayilik veya fiyat bilgileri yalnızca
-doğrulandıktan sonra eklenmeli. Search Console'da Mersin ve Akdeniz ile
-ilgili sorguların gösterim, tıklama ve konum değişimini izleyin.
-Sıralama yükselişi Google'ın taraması, yerel profil ve diğer rekabet
-sinyalleriyle birlikte oluşur; paket tek başına ilk sıra garantisi vermez.
+KAPSAM
+43 indekslenebilir HTML sayfası ve ayrı noindex 404 sayfası.
+35 konu ve hizmet rehberi; 8.400'den fazla özgün ana içerik kelimesi.
+Mevcut altı sayfanın URL'si korunur. Yenişehir/Mezitli/Toroslar için
+birbirinin kopyası şube sayfaları üretilmez; tek doğrulanmış adres kullanılır.
 
-Bu ZIP hazırlanmıştır; canlı siteye otomatik yüklenmemiştir.
+SIRALAMA VE YAPAY ZEKÂ GÖRÜNÜRLÜĞÜ
+Teknik uygunluk, içerik, yerel profil ve rekabet birlikte etkilidir.
+İlk sıra, her soruda görünme veya yapay zekâ yanıtında kaynak gösterilme
+garantisi yoktur. Google için özel llms.txt veya sihirli AI schema gerekmez.
+Google rehberi: https://developers.google.com/search/docs/appearance/ai-features
+Google içerik rehberi: https://developers.google.com/search/docs/fundamentals/creating-helpful-content
 
-GENEL TEST SONRASI DÜZELTMELER | 04.10.2026
-- Mobil sliderda tüm slaytlar aynı alanı paylaşır; metin uzunluğu değişince
-  alttaki bölümler yukarı/aşağı hareket etmez. Metinler kesilmez.
-- Mobil başlık, kenar boşlukları ve ok/düğme yerleşimi düzenlendi.
-- Fotoğraflar WebP formatında hafifletildi; kaynak görseller pakette korundu.
-- Kullanılan orijinal Font Awesome ikonları SVG olarak sayfalara eklendi;
-  ikon fontu ve tüm ikon kütüphanesi için ayrı ağ isteği kaldırıldı.
-- Sayfalarda kullanılan Bootstrap stilleri ayıklanıp sayfa başlığına alındı.
-- Ortak stiller sayfalara dahil edildi. assets/css/site.css aynı stillerin
-  düzenlenebilir kopyasıdır; bu sürüm HTML içindeki site-shared-style'ı kullanır.
-- Bootstrap ve GLightbox betikleri yerel dosyalardan defer ile yüklenir.
-- Galeri stilinin ilk ekranı bekletmesi engellendi.
-Bu sürümün canlıya yüklenmesinden sonra PageSpeed yeniden ölçülmelidir;
-önceki mobil 59 puanı bu düzeltmelerden önceki sürümün ölçümüdür.
+TAKİP
+Search Console'da gösterim, tıklama, CTR, ortalama konum ve indeks durumunu
+yayın öncesi dönemle karşılaştırın. Öncelikli sorgular: işitme cihazı,
+mersin işitme cihazı, mersin işitme cihazları ve rehberlerin konu sorguları.
+Google İşletme Profili adres/telefon/site URL'sini aynı tutun; güncel gerçek
+fotoğraflar ve gerçek müşteri deneyimleriyle profili destekleyin.

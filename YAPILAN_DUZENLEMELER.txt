@@ -1,0 +1,247 @@
+NAZAR İŞİTME — DÜZENLEME VE KONTROL RAPORU
+16 Ekim 2026
+
+SONUÇ
+- 6 sayfalık site, 43 indekslenebilir HTML sayfasına çıkarıldı.
+- 35 ayrı konu/hizmet rehberi, ayrıca rehber dizini, işletme fotoğrafları,
+  sık sorulanlar, yayın ilkeleri, gizlilik, site haritası ve iletişim sayfaları.
+- Ana içerik: 8.464 kelime (menü, alt bilgi ve tekrarlanan şablon hariç).
+- Eski 6 sayfa URL'si ile ana sayfanın eski bölüm bağlantıları korundu.
+- Bu paket hazırlanmıştır; canlı siteye otomatik yüklenmemiştir.
+
+GÖNDERDİĞİNİZ 8 HATA EKRANINA KARŞILIK YAPILANLAR
+1) Önbellek ve büyük görseller:
+   Fotoğraflar 320/640/1000 piksel WebP seçenekleriyle verilir. Ekrana uygun
+   srcset/sizes kullanılır. İlk ekrandaki üç büyük slayt yerine tek, öncelikli
+   fotoğraf yüklenir. Diğer görseller lazy yüklenir. CSS/JS dosya adları
+   içerik sürümünü taşır. Apache için 1 yıllık önbellek ve sıkıştırma kuralları
+   .htaccess'e eklendi. GitHub Pages'te HTTP önbellek süresini dosyadan
+   değiştirme sınırı aşağıda açıklanmıştır.
+2) Kullanılmayan JavaScript ve uzun görevler:
+   Bootstrap ve GLightbox bağımlılıkları kaldırıldı. Menü, galeri, arama,
+   form ve ölçüm tek küçük yerel betikte toplandı. İki ayrı Google yükleyicisi
+   tek yükleyiciye indirildi. Google ölçümü ziyaretçi kabul edince açılır.
+3) Dış bağlantılar:
+   WhatsApp ve harita yeni sekmede, noopener/noreferrer/nofollow ile açılır.
+   Sağlık kaynaklarına açıklayıcı normal kaynak bağlantıları verilir.
+   Her kaynak bağlantısını nofollow yapmak Google'ın genel bir şartı değildir.
+4) Bağlantı title / açıklaması:
+   Tüm bağlantılarda açıklayıcı title bulunur. Konusu belirsiz İncele
+   bağlantıları yerine konuya ait başlıklar ve erişilebilir adlar kullanılır.
+   Galeri fotoğrafları açıklamalı düğmelerdir.
+5) Yapılandırılmış veri ve breadcrumb:
+   LocalBusiness, WebSite ve sayfa verisi tutarlı kimliklere bağlandı.
+   Rehberlerde Article; iç sayfalarda görünür yol ile eşleşen BreadcrumbList;
+   soru sayfasında görünen cevaplarla eşleşen FAQPage kullanılır.
+   Ana sayfada gereksiz tek elemanlı breadcrumb schema kaldırıldı.
+   Sahte uzman, yıldız puanı, fiyat, stok ve şube verisi eklenmedi.
+6) Iframe:
+   Sayfa yüklenirken Google Haritalar iframe'i yüklenmez. Doğrulanmış adrese
+   giden, kullanıcının seçtiği yol tarifi bağlantısı bulunur.
+7) Favicon:
+   Kök favicon.ico, SVG, 96px PNG, 180px Apple simgesi, 192/512px simgeler
+   ve webmanifest eklendi. Dosya yolları ve sizes bildirimleri kontrol edildi.
+8) Ana içerik ve kod/yazı düzeni:
+   Sayfalarda tek H1 ve gerçek main alanı bulunur. Stil tekrarları harici
+   ortak dosyaya alındı. Her konu kısa cevap, dört ayrı açıklama, pratik liste,
+   iki soru-cevap, kaynak ve ilgili rehberlerle hazırlanır. Ana sayfa da
+   konuyu anlatan okunabilir içerik ve rehber bağlantılarıyla yenilendi.
+9) Ek bulgular:
+   Eski tasarımdaki düşük metin kontrastı düzeltildi. 320px menü taşması
+   giderildi. Üretim sırasında tespit edilen boş görsel yeniden oluşturuldu;
+   tüm raster dosyaları açılarak kontrol edildi. Klavye menüsü, native galeri
+   diyaloğu ve JavaScript kapalıyken gezinti çalışır.
+
+SEO VE İÇERİK YAPISI
+- Konular cihaz seçimi, fiyat/süreç, değerlendirme, günlük kullanım,
+  bakım/destek ve Mersin'de hizmet kümelerinde toplanır.
+- 35 rehber sunucudan gelen HTML içinde okunabilir; metinlerin görünmesi
+  veya sayfalara ulaşmak için bir arama robotunun JavaScript çalıştırması gerekmez.
+- Rehber dizininde Türkçe karakterlere toleranslı arama ve kategori süzme var.
+- 43 URL sitemap.xml içinde. robots.txt gerçek alan adına bağlıdır.
+- Her sayfada farklı title/description, canonical ve paylaşım bilgileri var.
+- 404 sayfası gerçek 404 durumuyla servis edilmelidir; noindex içerir.
+- Tek doğrulanmış işletme adresi/telefonu kullanılır. Sadece ilçe adını
+  değiştirerek üretilmiş kopya şube sayfaları yoktur.
+- Kurumsal sağlık ve SGK kaynakları ilgili rehberlerde ve yayın ilkelerinde
+  belirtilir. Fiyat ve SGK tutarı uydurulmaz. Ani işitme kaybında acil
+  tıbbi değerlendirme yönlendirmesi ticari içerikten önce gösterilir.
+- Hekim adı veya tıbbi inceleme onayı uydurulmaz. Yapay zekâ destekli
+  hazırlanma yöntemi yayın ilkelerinde açıkça belirtilir.
+
+ÖLÇÜM — YEREL LABORATUVAR SONUÇLARI
+Lighthouse 13.5.0, Chromium 153. Mobil benzetim, 4x CPU
+ve Lighthouse varsayılan mobil ağ yavaşlatması kullanıldı. Test sunucusu
+HTML/CSS/JS için gzip, varlıklar için 10 günlük önbellek başlığı sundu;
+Apache .htaccess kuralları bu test sunucusunda çalıştırılmadı.
+
+Sıra: Performans / Erişilebilirlik / En iyi uygulamalar / SEO
+- Önceki ana sayfa, mobil: 84 / 95 / 96 / 100
+- Güncel ana sayfa, mobil: 100 / 100 / 100 / 100
+- Güncel ana sayfa, masaüstü: 100 / 100 / 100 / 100
+- Örnek rehber, mobil: 100 / 100 / 100 / 100
+
+Ana sayfa LCP: 4.51 sn → 1.35 sn
+Yeni ana sayfa CLS: 0.000
+Yeni ana sayfa TBT: 3 ms
+Ana sayfa ham HTML: 174.232 bayt → 33,599 bayt
+Yeni ortak CSS: 20,221 bayt; JS: 6,775 bayt
+
+Önemli ölçüm bağlamı:
+- Bunlar canlı PageSpeed Insights puanı veya 28 günlük gerçek kullanıcı
+  Core Web Vitals verisi değildir. Hosting, ağ, cihaz ve dış etiketler sonucu değiştirir.
+- İlk ziyaret/ölçüm izni verilmemiş durum esas alındı. Kabul sonrası Google'ın
+  üçüncü taraf ölçüm kodu indirilebilir; onun ağ yükü bu puana dahil değildir.
+- Eski sürümde dış Google etiketleri test ağında yüklenemedi. Eski puan da
+  bu yerel koşulu yansıtır; canlı site ölçümü olarak sunulmaz.
+- Son mobil ölçümde yaklaşık 6 KiB önbellek fırsatı ve küçük ortak CSS için
+  oluşturma engelleme önerisi kalır. 100 puan, bütün tanı satırlarının
+  kapandığı anlamına gelmez. Önce içerik hızlandırıldı; sunucu başlıkları
+  yayın ortamında ayrıca doğrulanmalıdır.
+
+İŞLEV VE DOSYA DOĞRULAMASI
+- 26 tarayıcı kontrolü geçti; hata listesi boş.
+- 43 sayfanın tamamı 320px ve 1440px genişlikte HTTP 200 ile açıldı;
+  yatay taşma, eksik H1 veya kırık yüklenmiş görsel bulunmadı.
+- İç bağlantı, dosya yolu, srcset adayı ve sayfa içi hedef kontrolleri geçti.
+- Tekrarlanan title/description ve ID bulunmadı.
+- Sitemap 43 sayfa; 404 sitemap'e dahil değil. Yetim içerik bulunmadı.
+- JSON-LD geçerli JSON; görünür breadcrumb ve soru-cevap eşleşmeleri doğru.
+- Menü, Escape, arama, kategori, galeri ve WhatsApp taslağı kontrolleri geçti.
+- İzin öncesi Google yükleyicisi yok; kabul sonrası tek yükleyici var.
+  Telefon tıklamasında tek Ads conversion olayı oluşuyor. Formdaki ad ve
+  telefon ölçüm olaylarına eklenmiyor. Reddetme sonrası yeni olay gönderilmiyor.
+- WhatsApp denemesi yerel olarak durduruldu; gerçek mesaj gönderilmedi.
+- Ana sayfa, rehber dizini ve örnek makalede hedefli WCAG kontrolleri:
+  0 otomatik ihlal. Otomatik kontrol bütün
+  erişilebilirlik gereksinimlerini tek başına doğrulamaz.
+- Hesaptaki gerçek GA4/Ads teslimi ve önemli etkinlik ayarları yayın sonrası
+  Tag Assistant/DebugView ile ayrıca doğrulanmalıdır. Tıklama, satış değildir.
+
+HOSTING TARAFINDAKİ SINIR
+GitHub Pages statik dosya yayınlar; .htaccess'i uygulamaz. Bu nedenle yalnızca
+ZIP yükleyerek GitHub'ın Cache-Control, MIME nosniff, CSP HTTP başlığı veya
+Referrer-Policy yanıt başlığını yönetmek mümkün değildir. Meta CSP ve meta
+referrer tarayıcıda uygulanır; denetim aracının HTTP başlığı beklentisi ayrı kalır.
+Apache/cPanel için uygun kurallar pakette vardır. Tüm HTTP başlıklarının
+kontrolü için bunları yönetebilen yayın ortamı gerekir. Mevcut DNS veya
+hosting ayarları bu çalışma sırasında değiştirilmedi.
+
+YAYINDAN SONRA
+KURULUM.txt adımlarını izleyin. Sitemap'i Search Console'a gönderin.
+Ana sayfa, rehber dizini ve temel hizmet URL'lerini URL Denetleme ile kontrol
+edin. Yerel işletme profilindeki adres ve telefonu aynı tutun. Organik
+trafik, sorgu, tıklama ve iletişim olaylarını yayın öncesi dönemle karşılaştırın.
+Google'da ilk sıra veya tüm yapay zekâ sorularında kaynak gösterilme garantisi yoktur.
+
+TEKNİK KAYNAKLAR
+https://developers.google.com/search/docs/appearance/ai-features
+https://developers.google.com/search/docs/fundamentals/creating-helpful-content
+https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links
+https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages
+
+35 REHBERİN ADRESLERİ
+İşitme cihazı nedir, ne işe yarar?
+https://nazarisitmecihazlari.com/isitme-cihazi-nedir.html
+
+İşitme cihazı nasıl seçilir?
+https://nazarisitmecihazlari.com/isitme-cihazi-nasil-secilir.html
+
+İşitme cihazı fiyatları nasıl belirlenir?
+https://nazarisitmecihazlari.com/isitme-cihazi-fiyatlari.html
+
+SGK işitme cihazı desteği: rapor ve reçete süreci
+https://nazarisitmecihazlari.com/sgk-isitme-cihazi-destegi.html
+
+Mersin şarjlı işitme cihazı seçenekleri
+https://nazarisitmecihazlari.com/sarjli-isitme-cihazi-mersin.html
+
+Mersin kulak arkası işitme cihazı seçenekleri
+https://nazarisitmecihazlari.com/kulak-arkasi-isitme-cihazi-mersin.html
+
+Mersin kanal içi işitme cihazı seçenekleri
+https://nazarisitmecihazlari.com/kanal-ici-isitme-cihazi-mersin.html
+
+RIC işitme cihazı nedir? BTE’den farkı
+https://nazarisitmecihazlari.com/ric-isitme-cihazi.html
+
+Tek mi çift işitme cihazı mı?
+https://nazarisitmecihazlari.com/cift-tarafli-isitme-cihazi.html
+
+Mersin işitme testi ve değerlendirme süreci
+https://nazarisitmecihazlari.com/isitme-testi-mersin.html
+
+Odyogram nedir, nasıl okunur?
+https://nazarisitmecihazlari.com/odyogram-nedir.html
+
+İşitme kaybının belirtileri nelerdir?
+https://nazarisitmecihazlari.com/isitme-kaybi-belirtileri.html
+
+İşitme kaybı türleri: iletim, sensörinöral ve mikst
+https://nazarisitmecihazlari.com/isitme-kaybi-turleri.html
+
+Yaşlılarda işitme kaybı ve cihaz kullanımını kolaylaştırma
+https://nazarisitmecihazlari.com/yaslilarda-isitme-kaybi.html
+
+Çocuklarda işitme şüphesi varsa ne yapılmalı?
+https://nazarisitmecihazlari.com/cocuklarda-isitme-kaybi.html
+
+Ani işitme kaybında ne yapılmalı?
+https://nazarisitmecihazlari.com/ani-isitme-kaybi.html
+
+Kulak çınlaması ve işitme cihazı ilişkisi
+https://nazarisitmecihazlari.com/kulak-cinlamasi.html
+
+İşitme cihazına alışma süreci nasıl ilerler?
+https://nazarisitmecihazlari.com/isitme-cihazina-alisma.html
+
+Sesi duyuyorum ama konuşmaları anlayamıyorum
+https://nazarisitmecihazlari.com/isitme-cihazi-konusmalari-anlama.html
+
+Bluetooth işitme cihazı telefonuma uyumlu mu?
+https://nazarisitmecihazlari.com/bluetooth-isitme-cihazi.html
+
+İşitme cihazıyla telefon ve televizyon kullanımı
+https://nazarisitmecihazlari.com/isitme-cihazi-telefon-televizyon.html
+
+İşitme cihazıyla uyumak, duş almak ve seyahat etmek
+https://nazarisitmecihazlari.com/isitme-cihazi-gunluk-kullanim.html
+
+İşitme cihazı denemesinde neye bakılmalı?
+https://nazarisitmecihazlari.com/isitme-cihazi-deneme.html
+
+Mersin işitme cihazı bakımı ve kontrolü
+https://nazarisitmecihazlari.com/isitme-cihazi-bakimi-mersin.html
+
+İşitme cihazı nasıl temizlenir?
+https://nazarisitmecihazlari.com/isitme-cihazi-temizligi.html
+
+İşitme cihazı filtresi ne zaman değiştirilir?
+https://nazarisitmecihazlari.com/isitme-cihazi-filtresi.html
+
+İşitme cihazı pili: seçim, kullanım ve güvenlik
+https://nazarisitmecihazlari.com/isitme-cihazi-pili.html
+
+İşitme cihazı neden öter, ıslık sesi çıkarır?
+https://nazarisitmecihazlari.com/isitme-cihazi-neden-oter.html
+
+İşitme cihazından ses gelmiyorsa ne kontrol edilir?
+https://nazarisitmecihazlari.com/isitme-cihazi-ses-gelmiyor.html
+
+İşitme cihazı ıslandıysa ne yapılmalı?
+https://nazarisitmecihazlari.com/isitme-cihazi-nem-su.html
+
+Mersin kulak kalıbı ve kişisel uyum
+https://nazarisitmecihazlari.com/kulak-kalibi-mersin.html
+
+Mersin işitme cihazı ayarı ve kontrol görüşmesi
+https://nazarisitmecihazlari.com/isitme-cihazi-ayari-mersin.html
+
+İşitme cihazı servis ve tamir süreci nasıl işler?
+https://nazarisitmecihazlari.com/isitme-cihazi-servis-tamir.html
+
+Mersin’de işitme cihazı seçimi ve randevu süreci
+https://nazarisitmecihazlari.com/mersin-isitme-cihazi.html
+
+Gürültüye bağlı işitme kaybından korunma
+https://nazarisitmecihazlari.com/gurultuye-bagli-isitme-kaybi.html

@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /KURULUM.txt
+Disallow: /YAPILAN_DUZENLEMELER.txt
 
 Sitemap: https://nazarisitmecihazlari.com/sitemap.xml
