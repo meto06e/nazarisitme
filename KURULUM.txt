@@ -59,3 +59,21 @@ yayın öncesi dönemle karşılaştırın. Öncelikli sorgular: işitme cihazı
 mersin işitme cihazı, mersin işitme cihazları ve rehberlerin konu sorguları.
 Google İşletme Profili adres/telefon/site URL'sini aynı tutun; güncel gerçek
 fotoğraflar ve gerçek müşteri deneyimleriyle profili destekleyin.
+
+
+LOGO GÜNCELLEMESİ — 16.10.2026
+- Gönderilen yatay Nazar İşitme Cihazları logosu tüm sayfaların üst ve alt
+  bölümüne yerleştirildi. Renk, yazı ve kulak simgesi yeniden çizilmedi.
+- Gönderilen yuvarlak logo favicon.ico, favicon.svg, 96px PNG, Apple 180px
+  ve uygulama 192/512px ikonlarına uygulandı.
+- Favicon ve manifest bağlantılarına yeni sürüm eklendi. İşletme schema
+  logo alanı gerçek yatay logoyu gösterir.
+- 43 sayfalık içerik ve mevcut sayfa adresleri korundu.
+- Yeni dosyaları site köküne yükleyin; yükleme sonrası tarayıcı sekmesini
+  yeniden açın veya sert yenileme yapın. Arama motorunun simgeyi yeniden
+  taraması tarayıcı önbelleğinden ayrı gerçekleşir.
+
+Logo sonrası kontrol: 320, 390, 768, 900, 960, 1024 ve 1440px genişlikte
+taşma yok. Tüm sayfalarda logo, favicon ve işletme logo kaydı doğrulandı.
+Yeni mobil Lighthouse: {'performance': 100, 'accessibility': 100, 'best-practices': 100, 'seo': 100}; LCP 1.43 sn.
+Ölçüm önceki raporda açıklanan yerel laboratuvar koşullarında yapıldı.
